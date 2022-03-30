@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--===== CSS =====-->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!--===== ICONS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>Mattias Duarte</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--===== HEADER =====-->
     <header>
-        <nav class="navbar" id="navbar">
-            <div class="navbar_container container">
-                <a href="#" class="navbar_logo"></a>
-                <div class="nav_toggle">
+      <nav class="navbar" id="navbar">
+        <div class="navbar_container container">
+          <a href="#" class="navbar_logo">MD</a>
+          <div class="navbar_toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+          <ul class="navbar_menu">
+            <li>
+              <a href="#inicio">Inicio</a>
+            </li>
+            <li>
+              <a href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li>
+              <a href="#servicios">Servicios</a>
+            </li>
+            <li>
+              <a href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
+      <main class="inicio section" id="inicio">
+        <div class="inicio_container container grid">
+            <div class="inicio_content">
+                <h1 class="big-text">Mattias Duarte</h1>
+                <h2>Desarrollador web <br> FullStack</h2>
+                <p>
+                    Cuento con mas de 2 años de experiencia
+                    en el desarrollo de aplicaciones web. <br>
+                    Experiencia con tecnologias como React JS, Django <br>
+                    PHP, Node JS, MongoDB y MySQL.
+                </p>
+
+                <div class="inicio_buttons">
+                    <a href="#contacto" class="btn">
+                        Contactame
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </a>
+
+                    <a href="#" class="btn_primary">
+                        Descargar CV
+                        <i class='bx bx-download'></i>
+                    </a>
                 </div>
-                <ul class="navbar_menu">
-                    <li>
-                        <a href="#inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#sobre-mi">Sobre mi</a>
-                    </li>
-                    <li>
-                        <a href="#servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
             </div>
-        </nav>
-
-        <main class="inicio section" id="inicio">
-            <div class="inicio_container container">
-
-                <h1>inicio</h1>
-            </div>
-        </main>
+        </div>
+      </main>
     </header>
     <!--===== SOBRE MI =====-->
     <section class="sobre_mi section" id="sobre-mi">
-        <div class="sobre-mi_container container">
-
-            <h2>Sobre Mi</h2>
-        </div>
+      <div class="sobre-mi_container container">
+        <h2>Sobre Mi</h2>
+      </div>
     </section>
 
     <!--===== SERVICIOS =====-->
     <section class="servicios section" id="servicios">
-        <div class="servicios_container container">
-
-            <h2>Servicios</h2>
-        </div>
+      <div class="servicios_container container">
+        <h2>Servicios</h2>
+      </div>
     </section>
 
     <!--===== PORTAFOLIO =====-->
     <section class="portafolio section" id="portafolio">
-        <div class="portafolio_container container">
-                
-                <h2>Portafolio</h2>
-        </div>  
+      <div class="portafolio_container container">
+        <h2>Portafolio</h2>
+      </div>
     </section>
 
     <!--===== CONTACTO =====-->
     <section class="contacto section" id="contacto">
-        <div class="contacto_container container">
-                
-                <h2>Contacto</h2>
-        </div>
+      <div class="contacto_container container">
+        <h2>Contacto</h2>
+      </div>
     </section>
-    
+
     <!--===== JAVASCRIPT =====-->
     <script src="./assets/javascript/main.js"></script>
-</body>
+  </body>
 </html>

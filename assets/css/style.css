@@ -15,11 +15,15 @@
     --regular-weight: 400;
 
     /* colores */
+    --primary-color: #d35047;
     /* extra */
 }
 /*========== FORMAT CSS ==========*/
 *{
+    padding: 0;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
+    transition: all .3s ease-in-out;
 }
 
 html{
@@ -46,10 +50,21 @@ h4{
     font-size: var(--h4-size);
 }
 
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p,a,li{
+    font-size: var(--text-size);
+}
 
 /*========== REUSABLE CLASSES ==========*/
 .container{
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -57,11 +72,117 @@ h4{
     padding: 5rem 0 2rem;
     min-height: 100vh;
 }
+
+.big-text{
+    font-size: var(--biggest-text);
+}
+
+.grid{
+    display: grid;
+}
+
+.btn{
+    align-items: center;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    gap: .3rem;
+    text-align: center;
+    margin: 2rem 0;
+    padding: .5rem 1rem;
+    width: max-content;
+}
+
+.btn:hover i{
+    transform: translateX(5px);
+}
+
+.btn_primary{
+    align-items: center;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    gap: .3rem;
+    text-align: center;
+    margin: 2rem 0;
+    padding: .5rem 1rem;
+    width: max-content;
+}
 /*========== NAVBAR ==========*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.navbar_container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+.navbar_logo{
+    font-size: 1.6rem;
+}
+
+.navbar_menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_menu li a{
+    color: white;
+}
+
+.navbar_toggle{
+    display: none;
+}
+
 /*========== MAIN ==========*/
+.inicio_container{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.inicio_buttons{
+    display: flex;
+    gap: 1rem;
+}
 /*========== SOBRE MI ==========*/
 /*========== SERVICIOS ==========*/
 /*========== PORTAFOLIO ==========*/
 /*========== CONTACTO ==========*/
 /*========== FOOTER ==========*/
 /*========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    :root{
+        /* tipography */
+        --h1-size: 2.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.5rem;
+        --h4-size: 1.25rem;
+        
+        --biggest-text: 2rem;
+        --text-size:.85rem;
+    }
+    
+    .container{
+        max-width: 80%;
+    }
+}
